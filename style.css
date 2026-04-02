@@ -1,0 +1,113 @@
+html::before {
+  content: 'CodePen ♥ The Web';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  font-family: monospace;
+  opacity: 0.6;
+  background: rebeccapurple;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+body {
+  background: #f1f0ed;
+}
+
+h1 {
+  text-align: center;
+  font-size: 15vw;
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  color: #452e31;
+  text-shadow: 0px 3px 3px #9e8277;
+  margin-bottom: -5vw;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+p, span, h2, h3 {
+  font-family: "Josefin Sans"
+}
+
+.heroimage {
+  border: 2px solid #452e31;
+  border-radius: 6%;
+  width: clamp(300px, 90vw, 900px);
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+main {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.bodyimage {
+  border: 2px solid #452e31;
+  border-radius: 6%;
+  width: clamp(200px, 50vw, 400px);
+  height: auto;
+  display: block;
+}
+
+.bodyimage + section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.secondaryimage {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6%;
+}
+}
+
+.overviewcontent {
+  text-align: center;
+}
+
+.secondarycontent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.list {
+  list-style-position: outside;
+  ::marker {
+  content: "꩜   ";
+}
+
+.secondarybody {
+  float: clear;
+}
+
